@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    const int I =2, Y=2;
+    int matriz [I] [Y];
+    int c, f;
+
+ cout<<"Ingresar los numeros a mostrar en la tabla: "
+ <<endl;
+    for (f = 0; f < I; f++)
+    {
+        for (c = 0; c < Y; c++)
+        {
+            cin>>matriz [f][c];
+        }
+    }
+
+cout<<endl;
+cout<<endl;
+
+    cout<<"Se muestra la siguiente matriz de 2 X 2: "
+    <<endl;
+    if (f > c){   
+
+    for (f= 0; f < I; f++)
+    { 
+        for (c = 0; c < Y; c++)
+        {
+            cout<<matriz [f][c]<<" ";
+        }
+        cout<<endl;
+    }
+}else if (f < c) {
+        for (c= 0; c < I; c++)
+    { 
+        for (f = 0; f < Y; f++)
+        {
+            cout<<matriz [c][f]<<" ";
+        }
+        cout<<endl;
+    }
+
+
+}
+
+}
